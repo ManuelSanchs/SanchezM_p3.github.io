@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+* ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FCF0E1;
+}
+
+h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  color: #553117;
+  padding-top: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #553117;
+  padding-top: 0;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #553117;
+  padding-top: 0;
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #8B684F;
+  padding-top: 0;
+  margin: 0;
+}
+
+header {
+  max-width: 1440px;
+  height: 28rem;
+  text-align: center;
+}
+header h1 {
+  text-transform: uppercase;
+  padding-top: 8rem;
+}
+header h2 {
+  margin-top: 1rem;
+}
+
+header > * {
+  z-index: 10;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  display: block;
+  background-image: url(../images/zen-brush-symbol\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 100%;
+  background-color: #E1D2BF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  border-radius: 0 0 2rem 2rem;
+  z-index: 0;
+}
+
+.intro {
+  max-width: 1440px;
+}
+.intro .preamble h3 {
+  text-transform: uppercase;
+  text-align: left;
+  margin: 2rem;
+  padding: 0;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.intro .preamble p {
+  min-width: 16.56rem;
+  margin-left: 2rem;
+  margin-right: 6rem;
+}
+
+.preamble::before {
+  content: "";
+  display: block;
+  background-image: url(../images/bluesquare.png);
+  opacity: 0.7;
+  background-size: 16rem 20rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  height: 45rem;
+  width: 17rem;
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 20rem;
+    height: 52rem;
+  }
+}
+.preamble > * {
+  z-index: 10;
+  position: relative;
+}
+
+.summary {
+  margin: 2rem;
+  text-align: center;
+}
+.summary a {
+  color: #8B684F;
+}
+
+.main {
+  max-width: 1440px;
+}
+.main h3 {
+  text-align: left;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+.main .explanation p {
+  min-width: 16.56rem;
+  margin-left: 6rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+.main .explanation::before {
+  content: "";
+  display: block;
+  background-image: url(../images/pinksquare.png);
+  opacity: 0.7;
+  background-size: 16rem 25rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  height: 45rem;
+  width: 17rem;
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+.main .explanation > * {
+  z-index: 10;
+  position: relative;
+}
+.main .participation p {
+  min-width: 16.56rem;
+  margin-left: 2rem;
+  margin-right: 6rem;
+}
+.main .participation a {
+  color: #8B684F;
+}
+.main .participation::before {
+  content: "";
+  display: block;
+  background-image: url(../images/brownsquare.png);
+  opacity: 0.7;
+  background-size: 16rem 30rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  height: 20rem;
+  width: 17rem;
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+.main .participation > * {
+  z-index: 10;
+  position: relative;
+}
+.main .benefits p {
+  min-width: 16.56rem;
+  margin-left: 6rem;
+  margin-right: 2rem;
+  text-align: right;
+}
+.main .benefits::before {
+  content: "";
+  display: block;
+  background-image: url(../images/bluesquare.png);
+  opacity: 0.7;
+  background-size: 16rem 15rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+.main .benefits > * {
+  z-index: 10;
+  position: relative;
+}
+.main .requirements p {
+  min-width: 16.56rem;
+  margin-left: 2rem;
+  margin-right: 6rem;
+}
+.main .requirements [role=contentinfo] {
+  text-align: center;
+  margin: 3.5rem;
+}
+.main .requirements a {
+  color: #8B684F;
+}
+.main .requirements::before {
+  content: "";
+  display: block;
+  background-image: url(../images/pinksquare.png);
+  opacity: 0.7;
+  background-size: 16rem 50rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  height: 40rem;
+  width: 17rem;
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  transform-origin: 100px 100px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+.main .requirements > * {
+  z-index: 10;
+  position: relative;
+}
+
+footer {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0;
+}
+footer a {
+  padding: 6px;
+  color: #8B684F;
+  text-decoration: none;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  background-image: url(../images/pinkfooter.png);
+  opacity: 0.6;
+  background-size: 21rem 4rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  height: 20rem;
+  width: 40rem;
+  position: absolute;
+  margin-left: 3rem;
+  z-index: 0;
+  transform-origin: 100px 100px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+
+footer > * {
+  z-index: 10;
+  position: relative;
+}
+
+.sidebar {
+  text-align: center;
+  margin: 52px 0 0 0;
+  padding: 0;
+}
+.sidebar h3 {
+  color: #8B684F;
+  margin: 0;
+  padding: 0;
+}
+.sidebar a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #8B684F;
+}
+.sidebar .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.sidebar .wrapper .design-selection {
+  flex-wrap: wrap;
+}
+.sidebar .wrapper .design-selection ul {
+  -moz-columns: 2;
+       columns: 2;
+  text-align: end;
+}
+.sidebar .wrapper .design-selection .design-name {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #8B684F;
+  text-transform: uppercase;
+}
+.sidebar .wrapper .design-selection .designer-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #8B684F;
+}
+.sidebar .wrapper .design-archives {
+  margin-left: 10%;
+  margin-right: 0;
+  padding: 0;
+}
+.sidebar .wrapper .design-archives .viewall {
+  position: absolute;
+  top: 255px;
+  right: 6%;
+}
+.sidebar .wrapper .design-archives .viewall a {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #553117;
+  background-color: #8c7b6f;
+  border-radius: 9px;
+  text-decoration: none;
+  padding: 12px;
+}
+.sidebar .wrapper .zen-resources {
+  margin-left: 10%;
+}
+.sidebar .wrapper .zen-resources li, .sidebar .wrapper .zen-resources a {
+  margin: 1rem;
+}
+
+.design-selection::before {
+  content: "";
+  display: block;
+  background-image: url(../images/bluesquare.png);
+  opacity: 0.7;
+  background-size: 18rem 13rem;
+  background-repeat: no-repeat;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  margin: 0;
+  z-index: 0;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+
+.design-selection > * {
+  z-index: 10;
+  position: relative;
+}
+
+.select {
+  display: none;
+}
+
+[role=navigation] {
+  color: #8B684F;
+}
+[role=navigation] li {
+  padding: 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .preamble::before {
+    background-size: 30rem 15rem;
+    animation-duration: 8s;
+  }
+  @keyframes grow {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+  .main .explanation::before {
+    background-size: 28rem 16rem;
+    animation-duration: 8s;
+  }
+  .main .participation::before {
+    background-size: 28rem 18rem;
+    animation-duration: 8s;
+  }
+  .main .benefits::before {
+    background-size: 28rem 8rem;
+    animation-duration: 8s;
+  }
+  .main .requirements::before {
+    background-size: 28rem 30rem;
+    animation-duration: 8s;
+  }
+  footer::before {
+    margin-left: 8rem;
+  }
+  .design-selection::before {
+    background-size: 28rem 12rem;
+  }
+  .design-archives {
+    margin-left: 30%;
+  }
+  .zen-resources {
+    margin-left: 30%;
+  }
+  .sidebar .wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 992px) {
+  .preamble::before {
+    background-size: 50rem 15rem;
+    animation-duration: 14s;
+  }
+  .design-selection {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    margin-bottom: 2rem;
+  }
+  .design-selection ul {
+    display: flex;
+    -moz-columns: 2;
+         columns: 2;
+    text-align: end;
+  }
+  .intro {
+    margin-top: 4rem;
+  }
+  .design-selection::before {
+    background-size: 55rem 6rem;
+    animation-duration: 6s;
+  }
+  @keyframes grow {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 70rem;
+      height: 30rem;
+    }
+  }
+  .main .explanation::before {
+    background-size: 54rem 10rem;
+    animation-duration: 12s;
+  }
+  .main .participation::before {
+    background-size: 52rem 12rem;
+    animation-duration: 10s;
+  }
+  .main .benefits::before {
+    background-size: 52rem 6rem;
+    animation-duration: 8s;
+  }
+  .main .requirements::before {
+    background-size: 54rem 18rem;
+    animation-duration: 6s;
+  }
+  footer::before {
+    margin-left: 20rem;
+  }
+}
+@media (min-width: 1440px) {
+  header h1 {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-size: 4rem;
+  }
+  header::before {
+    height: 38rem;
+  }
+  .preamble::before {
+    background-size: 75rem 7rem;
+    animation-duration: 14s;
+  }
+  .wrapper .design-selection {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    margin-bottom: 2rem;
+  }
+  .wrapper .design-selection ul {
+    display: flex;
+    -moz-columns: 2;
+         columns: 2;
+    flex-wrap: wrap;
+    text-align: end;
+  }
+  .wrapper .design-selection ul li {
+    margin-right: 4rem;
+  }
+  .wrapper .design-archives .viewall {
+    position: absolute;
+    top: 255px;
+    right: 6%;
+  }
+  .wrapper .design-archives .viewall a {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #553117;
+    background-color: #8c7b6f;
+    border-radius: 9px;
+    text-decoration: none;
+    padding: 12px;
+  }
+  .summary {
+    margin-top: 20rem;
+  }
+  .design-selection::before {
+    background-size: 75rem 6rem;
+    animation-duration: 10s;
+  }
+  @keyframes grow {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 90rem;
+      height: 30rem;
+    }
+  }
+  .main .explanation::before {
+    background-size: 80rem 8rem;
+    animation-duration: 16s;
+  }
+  .main .participation::before {
+    background-size: 78rem 9.5rem;
+    animation-duration: 14s;
+  }
+  .main .benefits::before {
+    background-size: 76rem 6rem;
+    animation-duration: 12s;
+  }
+  .main .requirements::before {
+    background-size: 75rem 14rem;
+    animation-duration: 10s;
+  }
+  footer::before {
+    margin-left: 32rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
